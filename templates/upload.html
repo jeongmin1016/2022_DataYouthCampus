@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta authors="DATA_CAMPUS_KU_TEAM4" />
+  <meta name="viewport" content="width=device-width">
+  <title>Welcome Farm protector!</title>
+  <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-size.css')}} />
+  <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-layout.css')}} />
+  <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-presentation.css')}} />
+
+  <script language="javascript">
+    function showPopup() { window.open("/croplist", "crop_list_check", "width=400, height=300, left=100, top=50"); }
+  </script>
+</head>
+
+<body class="back">
+  <br />
+  <br />
+  <form action="/test"
+        method="POST"
+        enctype="multipart/form-data"
+  >
+    <fieldset>
+      <legend> 고객님의 농장 상태를 입력해주세요. </legend>
+      <br/> 
+      <span> 이&nbsp;&nbsp;&nbsp;름&nbsp;&nbsp;>&nbsp;</span> <input type="text">
+      <br/>
+      <br/>
+      <span> 이 메 일 > </span>&nbsp;<input type="email">
+      <br/>
+      <br/>
+      <span> 작&nbsp;&nbsp;&nbsp;물&nbsp;&nbsp;>&nbsp;</span> 
+      <input type="text", name="plant">
+      <input type="button" value="작물 이름을 확인해보세요" onclick="showPopup()"/>
+    
+      <br />
+      <br />
+    </fieldset>
+    
+    <br />
+    <br />
+    
+    <fieldset>
+      <legend id="service"> 확인하고 싶은 해충 사진을 넣어주세요 ! </legend>
+       <br>
+      <p><input type="file" name="myfile"> </p>
+  
+    </fieldset>
+    <hr>
+    &nbsp;&nbsp;&nbsp;
+    <input type="submit" value="확인" />
+    <input type="reset" value="취소" />
+    
+  </form>
+</body>
+
+</html>
