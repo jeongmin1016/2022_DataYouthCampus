@@ -52,16 +52,15 @@
   - Freezing 해제해 해충데이터셋 학습 및 예측 진행
   - 2차 학습 결과 : 약 60%
 
-        
-<br/>                
+
 **Domain Adaptation**                 
 - source domain은 train dataset을 target domain은 test dataset을 학습
 - feature extractor layer는 4개 convolution층으로 모델 설계
 - GRL lambdaf를 domain classifier에 곱해 feature extractor weigh을 업데이트하도록 설계
 - 학습 결과 : 약 47.5%       
 
-          
-<br/>          
+
+
 **Few Shot**               
 - 거리 기반 학습 채택
 - resnet50의 pretrain된 convolution network를 기반으로 prototype network 사용해 모델 설계
