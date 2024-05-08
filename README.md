@@ -24,7 +24,8 @@
 - [templates](https://github.com/DYC4/farm-protector/tree/main/templates) HTML 파일
 
 ## OUR SERVICE
-<img width="863" alt="주제 선정 배경" src="https://user-images.githubusercontent.com/101931446/186854226-251f8d17-c26d-48de-8e5a-5f603cc94c10.png">
+### 분석 배경
+<img width="608" alt="스크린샷 2024-05-08 오후 3 08 12" src="https://github.com/jeongmin1016/2022_DataYouthCampus/assets/109460178/dd32df75-a017-4884-8173-ea4611059644">
 첫번째로 병해충으로 인한 농부의 피해가 증가하고 있습니다. 5년 사이 병해충 피해로
 인한 농부의 피해면적이 7.6배 증가하였고, 2020년 농가 피해액은 약 342억원에 달했습니
 다. 엎친 데 덮친 격으로, 기상이상, 농업환경 변화, 작물 재배양식 다양화로 돌발해충들이 등장하면서 심각성은 더욱 커지고 있습니다. 여기서 돌발해충이란 시기나 장소에 한정되지 않고 돌발적으로 발생하여 농작물이나 일부 산림에 피해를 주는 토착 또는 외래해충을 말합니다. 
