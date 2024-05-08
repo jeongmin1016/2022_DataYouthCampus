@@ -41,6 +41,7 @@
 
 ### 모델링
 '적은 데이터'에도 준수한 성능을 낼 수 있는 모델이 필요합니다. <br/>
+
 **Transfer Learning** 
 - 1'st Resnet50
   - 딱정벌레, 바퀴벌레, 잠자리 3개 클래스로 구성된 데이터로 재학습(train data : 839 / test data : 180)
@@ -50,6 +51,7 @@
   - Data Augmentation, 노이즈 추가, 흑백전환, 좌우 반전 등을 통해 데이터 크기 6배로 늘려 사용
   - Freezing 해제해 해충데이터셋 학습 및 예측 진행
   - 2차 학습 결과 : 약 60%
+
         
 <br/>                
 **Domain Adaptation**                 
@@ -57,6 +59,7 @@
 - feature extractor layer는 4개 convolution층으로 모델 설계
 - GRL lambdaf를 domain classifier에 곱해 feature extractor weigh을 업데이트하도록 설계
 - 학습 결과 : 약 47.5%       
+
           
 <br/>          
 **Few Shot**               
