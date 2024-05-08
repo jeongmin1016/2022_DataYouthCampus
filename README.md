@@ -50,11 +50,21 @@
   - Data Augmentation, 노이즈 추가, 흑백전환, 좌우 반전 등을 통해 데이터 크기 6배로 늘려 사용
   - Freezing 해제해 해충데이터셋 학습 및 예측 진행
   - 2차 학습 결과 : 약 60%
+
 <br/>
 **Domain Adaptation**
+- source domain은 train dataset을 target domain은 test dataset을 학습
+- feature extractor layer는 4개 convolution층으로 모델 설계
+- GRL lambdaf를 domain classifier에 곱해 feature extractor weigh을 업데이트하도록 설계
+- 학습 결과 : 약 47.5%
 
 <br/>
 **Few Shot**
+- 거리 기반 학습 채택
+- resnet50의 pretrain된 convolution network를 기반으로 prototype network 사용해 모델 설계
+- support set : query set = 7 : 3
+  'support > query' 성립해야 성능이 좋다는 연구 결과 참고
+- 학습 결과 : 38.50%
 
 
 ### 서비스 소개 및 구성도
@@ -62,4 +72,5 @@
 <br/>
 <img width="863" alt="서비스 소개" src="https://user-images.githubusercontent.com/101931446/186854282-2b338c83-3cb5-44d6-873d-e52a152988db.png">
 
+"우리의 서비스"란에 사용자가 직접 입력하여 사진과 정보를 넣습니다. 이때 작물 이름을 정확히 확인하고 싶다면 리스트를 확인할 수 있습니다. 가나다 순서대로 작물이름이 정렬되어 있는 리스트이며 사용자가 편리하게 찾을 수 있습니다. 마지막으로 결과지에서 해당 해충에 대한 상위 5개의 농약과 함께 확인이 가능합니다.
 
